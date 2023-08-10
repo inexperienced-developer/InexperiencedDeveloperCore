@@ -1,16 +1,19 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public static class ListExtensions
+namespace InexperiencedDeveloper.Extensions
 {
-    public static List<T> DeleteObjsAndClear<T>(this List<T> list) where T : Component
+    public static class ListExtensions
     {
-        foreach (var val in list)
+        public static List<T> DeleteObjsAndClear<T>(this List<T> list) where T : Component
         {
-            if (val == null) continue;
-            MonoBehaviour.Destroy(val.gameObject);
+            foreach (var val in list)
+            {
+                if (val == null) continue;
+                MonoBehaviour.Destroy(val.gameObject);
+            }
+            list.Clear();
+            return list;
         }
-        list.Clear();
-        return list;
     }
 }
