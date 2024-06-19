@@ -29,5 +29,19 @@ namespace InexperiencedDeveloper.Extensions
             }
             return dict;
         }
+
+        public static T SafeAddAndReturnValue<TKey, T>(this Dictionary<TKey, T> dict, TKey key, T addValue) where T : class
+        {
+            dict.TryGetValue(key, out T value);
+            if (value == null)
+            {
+                dict.Add(key, addValue);
+            }
+            else
+            {
+                dict[key] = addValue;
+            }
+            return addValue;
+        }
     }
 }
