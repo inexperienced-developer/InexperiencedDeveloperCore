@@ -6,7 +6,7 @@ namespace ID.Core
 {
     public interface IInitializable
     {
-        void Init();
+        void Init(ManagerParams param);
         void CleanUp();
     }
 }

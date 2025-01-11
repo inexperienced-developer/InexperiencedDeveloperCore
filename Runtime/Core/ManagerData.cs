@@ -1,12 +1,12 @@
 using System;
-using UnityEngine;
 
 namespace ID.Core
 {
+    [Serializable]
     public abstract class ManagerData : IInitializable
     {
-        public abstract void Init();
+        public abstract void Init(ManagerParams param);
         public abstract void CleanUp();
-        public abstract void OnUpdate();
+        public abstract void OnUpdate(ManagerParams param);
     }
 }
