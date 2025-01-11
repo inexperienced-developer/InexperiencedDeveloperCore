@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace InexperiencedDeveloper.Helper
+namespace ID.Helper
 {
     public class DestroyOnLoad : MonoBehaviour
     {

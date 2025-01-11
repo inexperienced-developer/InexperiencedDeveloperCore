@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace InexperiencedDeveloper.Utils
+namespace ID.Utils
 {
     public static class MathUtils
     {

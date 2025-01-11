@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace InexperiencedDeveloper.Core
+namespace ID.Core
 {
     public class Singleton<T> : MonoBehaviour where T : Component
     {

@@ -4,10 +4,7 @@ using UnityEngine;
 
 namespace ID.Core
 {
-    public interface IInitializable
+    public abstract class ManagerParams
     {
-        void Init();
-        void CleanUp();
     }
 }
-

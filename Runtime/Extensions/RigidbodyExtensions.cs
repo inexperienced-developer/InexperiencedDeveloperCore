@@ -1,7 +1,7 @@
-using InexperiencedDeveloper.Utils;
+using ID.Utils;
 using UnityEngine;
 
-namespace InexperiencedDeveloper.Extensions
+namespace ID.Extensions
 {
     public static class RigidbodyExtensions
     {

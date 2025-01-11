@@ -1,4 +1,4 @@
-namespace InexperiencedDeveloper.Extensions
+namespace ID.Extensions
 {
     public static class FloatExtensions
     {
